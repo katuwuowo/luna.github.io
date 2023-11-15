@@ -18,3 +18,9 @@ h3
 {
     color: green;
 }
+span
+{
+    color: darkcyan;
+    font-size: large;
+    font-style: italic;
+}
