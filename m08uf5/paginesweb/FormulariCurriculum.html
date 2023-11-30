@@ -7,7 +7,7 @@
     <title>Formulari</title>
 </head>
 <body>
-    <form action="/repouwu/m08uf5/php/form.php">
+    <form action="../php/form.php">
     <fieldset id="basicinfo">
         <legend>Información Basica</legend>
         <label>Nombre</label><br>
@@ -17,43 +17,44 @@
         <label>email</label><br>
         <input type="text" placeholder="tuemail@dominio.com" name="email"><br>
         <label>Fecha Nacimiento:</label><br>
-        <input type="date" name="Fecha">
+        <input type="date" value="" name="fecha">
      </fieldset>
      <fieldset id="nationality" name="nacionalidad">
         <legend id="nacionalidad">Nacionalidad</legend>
-        <input type="radio" name="nacionalidad">
-        <label>Española</label>
-        <input type="radio" name="nacionalidad">
-        <label>Comunitario(UE)</label>
-        <input type="radio" name="nacionalidad">
-        <label>No comunitario</label>
+        <input id="ES" type="radio" value="ES" name="nacionalidad">
+        <label for="ES">Española</label>
+        <input id="UE" type="radio" value="UE" name="nacionalidad">
+        <label for="UE">Comunitario(UE)</label>
+        <input id="NC" type="radio" value="NC" name="nacionalidad">
+        <label for="NC">No comunitario</label>
      </fieldset>
      <fieldset id="studies">
         <legend>Estudios</legend>
         <select name="estudios">
-            <option name=""estudios value="estudios">ESO</option> 
-            <option name="estudios" value="estudios">GM</option> 
-            <option name=""estudios value="estudios">GS</option> 
-            <option name="estudios" value="estudios">Universidad</option> 
+            <option value="ESO">ESO</option> 
+            <option value="GM">GM</option> 
+            <option value="GS">GS</option> 
+            <option value="Universidad">Universidad</option> 
         </select>
     </fieldset>
     <fieldset id="languages">
         <legend id="idiomas">Idiomas</legend> 
-        <input type="checkbox" name="idiomas[]">
-        <label>Catalán</label>
-        <input type="checkbox" name="idiomas[]">
-        <label>Castellano</label>
-        <input type="checkbox" name="idiomas[]">
-        <label>Ingles</label>
-        <input type="checkbox" name="idiomas[]">
-        <label>Japonés
+        <input id="Català" type="checkbox" value="Català" name="idiomas[]">
+        <label for="Català">Catalán</label>
+        <input id="Castellà" type="checkbox" value="Castellà" name="idiomas[]">
+        <label for="Castellà">Castellano</label>
+        <input id="Ingles" type="checkbox" value="Ingles" name="idiomas[]">
+        <label for="Ingles">Ingles</label>
+        <input id="Japonés" type="checkbox" value="Japonés" name="idiomas[]">
+        <label for="Japonés">Japonés
         </label>
     </fieldset> <br>
     <fieldset id="SubmitField">
     <input id="Submit" type="submit" name="SUBMITBUTTON" value="Enviar"/>
-    <input id="Submit" type="button" name="CANCELBUTTON" value="Cancelar"/>
+    <input id="Cancel" type="reset" name="CANCELBUTTON" value="Cancelar"/>
     </fieldset>
-
-    </form>
+    </form> <br>
+    <a href="../index.html">Anar a índex</a>
+    <img src="../imatges/ex2check.png" alt="Comprobació">
 </body>
 </html>
