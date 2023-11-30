@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/c">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulari</title>
@@ -8,7 +9,7 @@
 <body>
     <form action="/repouwu/m08uf5/php/form.php"></form>
     <fieldset>
-        <legend>Información Basica</legend>
+        <legend class="basicinfo">Información Basica</legend>
         <label>Nombre</label><br>
         <input type="text" value="tunombre" name="nombre"><br>
         <label>Altura en centimetros</label><br>
@@ -18,7 +19,7 @@
         <label>Fecha Nacimiento:</label><br>
         <input type="date" name="Fecha">
      </fieldset>
-     <fieldset name="nacionalidad">
+     <fieldset class="nationality" name="nacionalidad">
         <legend>Nacionalidad</legend>
         <input type="radio" name="nacionalidad">
         <label>Española</label>
@@ -27,9 +28,29 @@
         <input type="radio" name="nacionalidad">
         <label>No comunitario</label>
      </fieldset>
-     <fieldset>
+     <fieldset class="studies">
+        <legend>Estudios</legend>
+        <select name="estudios">
+            <option name=""estudios value="estudios">GM</option> 
+            <option name="estudios" value="estudios">Bardaji</option> 
+        </select>
+    </fieldset>
+    <fieldset class="languages">
+        <legend>Idiomas</legend>
+        <legend>Nacionalidad</legend>
+        <input type="checkbox" name="idiomas">
+        <label>Catalán</label>
+        <input type="checkbox" name="idiomas">
+        <label>Castellano</label>
+        <input type="checkbox" name="idiomas">
+        <label>Ingles</label>
+        <input type="checkbox" name="idiomas">
+        <label>Japonés
+        </label>
+    </fieldset>
+    <input class="SubmitButton" type="submit" name="SUBMITBUTTON" value="Enviar"/>
 
-     </fieldset>
+
 
 </body>
 </html>
